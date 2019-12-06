@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+    background-color: #333132;
+    font-family: 'Raleway', sans-serif;
+  }
+
+.title {
+    color: #eee;
+    text-align: center;
+    font-size: 50px;
+}
+
+.rocket-tab {
+    display:block;
+    margin: auto;
+    background-image: url('lines.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 30%;
+    height: 480px;
+}
+
+.rocketimg {
+    display: block;
+    margin: auto;
+    padding-top: 200px;
+    -webkit-animation: mover 4s infinite  alternate;
+    animation: mover 4s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100px); }
+}
+
+.stats-tab {
+   float: left;
+   background-color: #434343; 
+   color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    border-radius: 25px;
+    /* clear: both; */
+    margin-left: 30px;
+}
+
+.resources-tab {
+    float: left;
+    background-color: #434343; 
+    color: #fff;
+     padding: 10px;
+     text-align: center;
+     width: 300px;
+     border-radius: 25px;
+     clear: both;
+     margin-left: 30px;
+     margin-top: -60px;
+ }
+
+ .upgrades-tab {
+    float: right;
+    background-color: #434343; 
+    color: #fff;
+     padding: 10px;
+     text-align: center;
+     width: 300px;
+     border-radius: 25px;
+     margin-right: 30px;
+ }
+
+ .button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .button:focus {outline:0;}
+  .button:hover {
+    background-color: #fff; /* Green */
+    color: black;
+  }
+  .button {
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+  }
+
+  .button:disabled {
+    color: #908e8e;
+    border: 1px solid #908e8e;  
+    background: transparent;
+  }
+
+  .rocket-tab-home {
+    display:block;
+    margin: auto;
+    width: 30%;
+}
+
+.btn-div {
+  text-align: center;
+}
+
+.startbtn {
+  margin-top: 20px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+}
+
+.startbtn:hover {
+  background-color: #fff; 
+  color: #000;
+}
+
+.description-home {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.rocketimghome {
+  display: block;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.rocket-ani {
+  display: block;
+  margin: auto;
+  padding-top: 50px;
+  animation-name: rockani;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.fade-ani {
+  animation-name: fadeani;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeani {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeani {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes rockani {
+  from {padding-top: 50px;}
+  to {padding-top: 328px;}
+}
+
+@-webkit-keyframes rockani {
+  from {padding-top: 50px;}
+  to {padding-top: 328px;}
+}
+
+#overlay {
+  position: fixed;
+  display: none; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #333132;
+  z-index: 2; 
+}
+
+.overlay-box {
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  background-color: #333132;
+  width: 80%;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+
+}
+
+.footer a {
+  color: #fff;
+}
